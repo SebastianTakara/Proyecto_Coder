@@ -15,9 +15,9 @@
             <li>
                 <p>NOMBRE: {{ historias.titulo }} </p>
                 <p> 
-                    <a href=!#>Ver</a> | 
-                    <a href=!#>Ver</a> | 
-                    <a href=!#>Ver</a> | 
+                    <a href="{% url 'Detail' historias.id%}">Ver</a> | 
+                    <a href="{% url 'Edit' historias.id%}">Editar</a> | 
+                    <a href="{% url 'Delete' historias.id%}">Borrar</a> | 
 
                 
                 </p> 
@@ -26,7 +26,7 @@
         {% endfor %}
     </ul>
 
-    <a href=!#>Nuevo</a> | 
+    <a href="{% url 'New'%}">Nuevo</a> | 
 
 
 </body>
